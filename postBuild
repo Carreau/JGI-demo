@@ -8,6 +8,8 @@ echo 'export PATH="$HOME/.cargo/bin:$PATH"' >> ~/.bashrc
 
 python -m bash_kernel.install
 
+jupyter nbextension enable --py widgetsnbextension
+
 invoke build --env-name=root --no-kernel
 invoke demofiles
 jupyter labextension install @jupyter-widgets/jupyterlab-manager
