@@ -29,5 +29,6 @@ dependencies:
       - julia
       - cffi_magic
       - bash_kernel
+      - py3Dmol
       
   
