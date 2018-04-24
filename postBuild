@@ -1,3 +1,14 @@
 #!/bin/bash
+
+set -ex
+
+
 curl https://sh.rustup.rs -sSf | sh -s -- -y
 echo 'export PATH="$HOME/.cargo/bin:$PATH"' >> ~/.bashrc
+
+python -m bash_kernel.install
+
+invoke build --env-name=root --no-kernel
+invoke demofiles
+jupyter labextension install @jupyter-widgets/jupyterlab-manager
+jupyter lab clean

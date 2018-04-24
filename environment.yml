@@ -1,7 +1,25 @@
+channels:
+  - conda-forge
 dependencies:
+  - jupyterlab
+  - nodejs=8.9
+  - notebook
+  - nbconvert=5.3
+  - ipykernel
+  - ipywidgets
+  - widgetsnbextension
+  - bqplot=0.10
+  - dask=0.15
+  - matplotlib=2.1
+  - pandas=0.20
+  - python=3.6
+  - seaborn=0.7
+  - sympy=1.0
+  - pyyaml
+  - traittypes==0.0.6
+  - invoke=0.21
   - matplotlib
   - numpy
-  - pandas
   - fortran-magic 
   - cython
   - rpy2
@@ -9,5 +27,6 @@ dependencies:
   - pip:
       - julia
       - cffi_magic
+      - bash_kernel
       
   
